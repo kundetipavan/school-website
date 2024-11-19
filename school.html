@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>College Website</title>
+    <link rel="stylesheet" href="school.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="College Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="imgs">
+        <img src="images/schl.jpg" alt=" " height="100%" width="100%" style="filter: blur(4px);">
+    </div>
+
+    <section id="home">
+        <div class="hero">
+            <h1>Welcome to Our College</h1><br>
+            <h3>Andhra Universsity</h3><br>
+            <button onclick="learnMore()">Learn More</button>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Our college has been providing world-class education for over 20 years. We offer a variety of programs to help students achieve their academic and professional goals.</p><br><br>
+        <div class="info">
+            <h2 style="color: rgba(0, 0, 255, 0.582);">Infrastructure Images</h2><br>
+            <img src="images/1.avif" alt=""width="20%" height="200px" >
+            <img src="images/2.avif" alt=""width="20%" height="200px" >
+            <img src="images/3.avif" alt=""width="20%" height="200px" >
+            <img src="images/4.avif" alt=""width="20%" height="200px" >
+            <img src="images/5.avif" alt=""width="20%" height="200px" >
+            <img src="images/6.avif" alt=""width="20%" height="200px" >
+            <img src="images/7.avif" alt=""width="20%" height="200px" >
+            <img src="images/8.avif" alt=""width="20%" height="200px" >
+
+
+        </div>
+    </section>
+
+    <section id="courses">
+        <h2>Our Courses</h2>
+        <div class="course-cards">
+            <div class="course-card">
+                <img src="images/cs.jpg.crdownload" alt="" width="60%" height="150px"> <br>
+                <h3>Computer Science</h3>
+                <p>Learn the foundations of software development, machine learning, and more.</p>
+            </div>
+            <div class="course-card">
+                <img src="images/bs.jpg" alt="" width="60%" height="150px"><br>
+
+                <h3>Business Administration</h3>
+                <p>Master the art of business leadership, marketing, and finance.</p>
+            </div>
+            <div class="course-card">
+                <img src="images/ps.jpg" alt="" width="60%" height="150px"><br>
+
+                <h3>Psychology</h3>
+                <p>Study the human mind and behavior with a focus on clinical practices.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm" onsubmit="submitForm(event)">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="formResponse"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Andhra Universsity. Designed by pavankundeti.</p>
+    </footer>
+
+    <script>
+
+function learnMore() {
+    alert("Thank you for your interest!Your future begins here.");
+}
+
+
+    </script>
+</body>
+</html>
